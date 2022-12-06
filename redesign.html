@@ -11,42 +11,41 @@
 "star.png" 
         type = "image/x-icon">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Portfolio</a> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item bold">
-                <a class="nav-link active" href="#">Assignment 2</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </div>
-        </div>  
-      </nav>
+<body id="blackBody">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top"> 
+    <!-- fixed doesnt worrk -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">My Portfolio</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item bold">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="personas.html">Personas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="redesign.html">Redesign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iterative.html">Iterative</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appdev.html">App Dev</a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </nav>
 <div class="titleBlock">
 <h2 id="responsiveTitle">
     Responsive Redesign
 </h2>
 </div>
-<div class="twoBlocks">
+<div class="twoBlocks rationaleBoxShadow">
 <div class="blackBlock" id="logoBox">
     <div class="images">
     <img src="gmorty.png" alt="Gmorty logo" id="logo">
@@ -58,8 +57,7 @@
 <a class="btn btn-primary btn-lg viewBtn" href="https://crazysloth645.github.io/redesign/" role="button">View Redesigned Page!</a>
 </div>
 </div> 
-<hr>
-<div class="lists">
+<div class="lists" id="usability">
 <div class="subheading">
     <h3>Usability Issues</h3>
 </div>
@@ -76,18 +74,8 @@ c.	<div class="babyTitle">Learnability: </div>The main content of their Services
 <div class="listObj">
 d.	<div class="babyTitle">Hierarchy:</div> There are no clear markers or guided flow for the user. Unclear about what is prioritized. 
 </div>
-<div class="listObj">
-e.	<div class="babyTitle">Color:</div> Too many different shades of orange, beige, and gray are used. The importance value and contrast decreases 
-</div>
-<div class="listObj">
-f.	<div class="babyTitle">Unclear goal and audience:</div> The credibility of the company is buried down which would be a main attraction to a lot of customers. A lot of their main content gets missed because of lack of clarity. 
-</div>
-<div class="listObj">
-g.	<div class="babyTitle">Hindrances:</div> The mouse-over menu can be distracting and pops up even when not required.
-</div>
 </div>
 
-<hr>
 <div class="lists">
 <div class="subheading">
   <h3>Accessibility Issues</h3>
@@ -112,7 +100,7 @@ D.	There are some basic issues such as low contrast, and lack of alt text that W
     align-self: flex-start;
     /* padding: 2rem; */
 ">Lo-Fi Prototypes</h3>
-<div class="singleImage" id="lofi">
+<div class="singleImage1" id="lofi">
 <img src=olddesigns.png><p>Initial Rough Designs (Not chosen)</p></div>
 <div class="d-flex flex-row" id="lofi">
 <div class="imageOne">

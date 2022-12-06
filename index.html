@@ -11,42 +11,124 @@
         type = "image/x-icon">
 <link rel="stylesheet" type="text/css" href="styles.css" /> 
 </head>
+<script>
+function redesignPage(){
+  window.open("redesign.html");
+}
+
+// TODO: Change these
+function personaPage(){
+  window.open("personas.html");
+}
+
+function iterativePage(){
+  window.open("iterative.html");
+}
+
+function appPage(){
+  window.open("appdev.html");
+}
+
+
+
+</script>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top"> 
+      <!-- fixed doesnt worrk -->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">My Portfolio</a> 
-          <!-- Make this  logo -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item bold">
+              <!-- <li class="nav-item bold">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="personas.html">Personas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="redesign.html">Assignment 2</a>
+                <a class="nav-link" href="redesign.html">Redesign</a>
               </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="iterative.html">Iterative</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="appdev.html">App Dev</a>
+              </li>
             </ul>
           </div>
         </div>  
       </nav>
       <div class="mainPage d-flex flex-column">
+        <div class="rowHeader">
 <div class="titleHeading">
-        UIUX.   
+        Hi 👋🏻 <br>I'm a designer studying<br>CS + English   
 </div>
-<a class="btn btn-primary btn-lg viewBtn" href="redesign.html" role="button">View Assignment 2</a>
+  <div class="meImage"><img src="me.png"></div> 
+</div>
+<div class="thinImage"><img src="arrow.gif"></div> 
+</div>
+
+<div class="allCardDivs">
+<!-- Item #1 -->
+<div class="cardDiv1" onclick="personaPage()">
+  <div class="cardImage1"> <img src="t1.png"><a class="btn btn-primary btn-lg viewBtn" href="personas.html" role="button" target="_blank">Click to View</a>
+  </div>
+  <div class="titleCard">
+Personas & Storyboard
+<div class="descrCard">
+  – Understanding user interaction with GoodNotes app + user research
+   </div>
+  </div>
+</div>
+
+<!-- #2 -->
+<div class="cardDiv2" onclick="redesignPage()">
+  <div class="cardImage2"> <img src="t2.png"><a class="btn btn-primary btn-lg viewBtn" href="redesign.html" role="button" target="_blank">Click to View</a>
+  </div>
+  <div class="titleCard">
+Redesign
+<div class="descrCard">
+  –Project of redesigning an existing website
+   </div>
+  </div>
+</div>
+
+
+<!-- #3 -->
+<div class="cardDiv3" onclick="iterativePage()">
+  <div class="cardImage3"> <img src="t3.png"><a class="btn btn-primary btn-lg viewBtn" href="iterative.html" role="button" target="_blank">Click to View</a>
+  </div>
+  <div class="titleCard">
+Iterative Design
+<div class="descrCard">
+  – Creating iterative prototypes of a startup's website (hifi and lofi)
+   </div>
+  </div>
+</div>
+
+
+<!-- #4 -->
+
+<div class="cardDiv4" onclick="appPage()">
+  
+  <div class="cardImage4"> <img src="t4.png"><a class="btn btn-primary btn-lg viewBtn" href="appdev.html" role="button">Click to View</a>
+  </div>
+  <div class="titleCard">
+App Development
+<div class="descrCard">
+  – Creating a React App for a college social networking site
+   </div>
+  </div>
+</div>
+
+<!-- <a href="redesign.html">
+  <div class="square">
+  </div>
+  </a> -->
+
 </div>
 
 

@@ -47,13 +47,129 @@
       overflow-x: hidden; 
   }
 
+  .allCardDivs{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .cardDiv1, .cardDiv2, .cardDiv3, .cardDiv4{
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+    background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    margin: 2rem;
+    padding: 1rem;
+    align-items: center;
+    padding-left: 4rem ;
+    /* justify-content: center; */
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 10px 1px rgb(0, 0, 0/60%); */
+    /* box-shadow: 5px 5px 5px 12px rgb(202, 194, 194); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .rationaleBoxShadow, .doubleTextBox{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+  }
+
+  .doubleTextBox, #dtb1, #dtb2{
+    /* background-image: linear-gradient(to right, #f5806e 0%, #f5806e 19%, #fe9a8b 60%, #fe9a8b 100%);
+    background-color: #f9748f; */
+    margin-left: 2rem;
+  }
+
+  #dtb2{
+    background-color: #f88674;
+  }
+  
+#dtb1 {
+    background-color: #FF6A88
+}
+
+#dtb3{
+    background-color: black;
+}
+
+  .cardDiv2, .cardDiv4{
+    flex-direction: row-reverse;
+  }
+
+  .cardImage1, .cardImage3{
+    max-width: 25rem;
+    /* height: 15rem; */
+    align-items: center;
+    justify-content: center;
+    background: url('gmorty.png') no-repeat;
+    border-radius: 15px;
+    /* background-size: 100%; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .cardImage2, .cardImage4{
+    max-width: 25rem;
+    /* height: 15rem; */
+    align-items: center;
+    justify-content: center;
+    background: url('gmorty.png') no-repeat;
+    border-radius: 15px;
+    /* background-size: 100%; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 4rem;
+  }
+
+  .titleCard{
+    font-size: 5rem;
+    color: white;
+    margin-left: 2rem;
+  }
+
+  .descrCard{
+    /* color: #f78ca0; */
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    /* opacity: 0.6; */
+    font-style: italic;
+  }
+
+  .meImage{
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 20rem;
+  }
+
    .mainPage{
-padding: 3rem;
-background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%, #fe9a8b 80%);
+padding-left: 3rem;
+padding-right: 3rem;
+padding-top: 4.5rem;
+/* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%, #fe9a8b 80%); */
+background-color: white;
+margin-left: 2rem;
+margin-right: 2rem;
+align-items: center;
+/* border-radius: 20px; */
   } 
 
+  #usability{
+    margin-top: 3rem;
+  }
+  .square{
+    width: 100px;
+    height: 500px;
+    background-color: #fd868c;
+  }
+
+  .thinImage{
+    height: 15.5rem;
+    width: 15.5rem;
+  }
+
   body{
-    background-color: black;
+    background-color: white;
     /* font-family: 'Montserrat'; */
     font-family:'Lato';
     color:white;
@@ -73,21 +189,17 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     font-weight: 200;
     color: white;
     /* font-family: 'Alkalami'; */
-    font-weight: bolder;
-    font-size: 7rem;
+    /* font-weight: bolder; */
+    font-size: 6rem;
     text-align: center;
   }
 
   h3{
     font-weight: 100;
     color: white;
-    /* font-family: 'Montserrat'; */
     font-family:'Lato';
-    font-size: 4rem;
-    /* background-color: black; */
+    font-size: 3rem;
     width: fit-content;
-    /* padding: 1rem; */
-    /* text-align: center; */
   }
 
   .hifi h3{
@@ -107,9 +219,20 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
 
 .titleHeading, h1{
     font-weight: 200;
-    color: white;
+    /* color: white; */
+    color:#f9748f;
     font-weight: bolder;
-    font-size: 15rem;
+    font-size: 5rem;
+    line-height: 1;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.rowHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .whiteBlock{
@@ -147,6 +270,8 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-left: 14rem;
+    margin-right: 14rem;
     /* background-color: black; */
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
@@ -155,6 +280,7 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
     background-color: black;
     border-color: transparent;
+    border-radius: 7px;
 }
 
 .listBlock{
@@ -166,11 +292,22 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     font-size: large;
    font-weight: bolder;
    text-decoration-line: underline;
-   text-decoration-color: #f9748f;;
+   text-decoration-color:#f9748f;
+}
+
+#blackBody{
+    background-color: black;
+    padding-top:3rem;
+}
+
+#whiteBody{
+    background-color: white;
 }
 
 .lists{
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding-left: 14rem;
+    padding-right: 14rem;
 }
 
 .listsTwo{
@@ -203,7 +340,7 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
    border-top: #f78ca0 1.5px solid;
     padding: 1rem;
     color: white;
-    font-size: larger;
+    font-size: large;
 }
 
 .imageTwo{
@@ -243,17 +380,6 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     margin: 1rem;
 }
 
-.iconListElement{
-    display: flex;
-    flex-direction: row;
-    padding: 1%;
-    border: #8338ec;
-    border: #8338ec;
-    border-style: solid;
-    border-width: 2px;
-    padding: 2.5rem;
-}
-
 .iconListElement p{
     margin-left: 1rem;
     font-size: large;
@@ -266,11 +392,39 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
+    
     /* margin: 2rem; */
 }
 
+.singleTextBlock{
+    margin-bottom: 4rem;
+}
+
+.singleImage1{
+    width: 40%;
+}
+
+.blackReflect{
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
 .singleImage{
-    width: 30rem;
+    width: 80%;
+}
+
+#question{
+    align-items: center;
+    padding-bottom: 2rem;
+    background-color: black;
+}
+
+#observations{
+    padding-top: 3rem;
 }
 
 .reflect h3{
@@ -280,6 +434,56 @@ background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 50%
 
 .reflect li{
     font-size: large;
+}
+
+.twoBlocks, .twoBlocksofText{
+background-color: black;
+}
+
+.twoBlocks, .twoBlocksofText, .twoBlocksofTextTrans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.singleTextBlock{
+    align-items: center;
+    
+}
+
+.singleTextBlock, .singleTextBlock1{
+    background-color: black;
+}
+
+.singleTextBlock, .singleTextBlock1, .singleTextBlock2{
+    display: flex;
+    text-align: left;
+    padding:1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    padding-right: 5rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+}
+
+#borderBox{
+    border-right: #f78ca0;
+}
+
+#borderBox, .rightBorder{
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+.blackBlock, .doubleTextBox{
+    /* background-color: black; */
+    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    color: white;
+    padding: 2rem;
+    width: 60%;
+    /* background-color: #f78ca0; */
 }
 
 /* .changeColor{
@@ -324,7 +528,9 @@ table {
             font-size: 2rem;
         }
         .lists {
-            padding: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         .imageOne, .singleImage{
