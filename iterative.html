@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-lg bg-light fixed-top" id="orangeNavBar"> 
     <!-- fixed doesnt worrk -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">My Portfolio</a> 
+        <a class="navbar-brand" href="index.html">Back to Portfolio</a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,19 +49,23 @@ padding-top: 2rem;">
 <h2 id="responsiveTitle">
     Iterative Design
 </h2>
-<div class="introBlock"> 
-  <div class="rationale rightBorder"> 
-    <div class="titleRationale"> Rationale
+
+<div class="newBlocks rationaleBoxShadow">
+  <div class="orangeBlock" id="logoBox">
+      <div class="images">
+      <img src="t3.png" id="logo">
   </div>
-  To redesign a startup's website through multiple lo-fi and hi-fi mockups
-</div>
-  <div class="keyLearnings"> 
-    <div class="titleRationale"> Skills
-    </div>
-<li> Wireframing</li>
-<li> Analysis</li>
+  </div> 
+  <div class="orangeBlock">
+     <h3> Rationale:</h3>
+  <p>This project involved recreating the website of a YCombinator startup by rethinking its goals, aims, and design principles. We were a group of 4 students and we created multiple versions of the website and chose the final version based on an online testing forum. </p> 
   </div>
-</div>
+  </div>
+
+  <div class="d-flex flex-column" id="longImage">
+    <!-- <img src="cprocess.png">  -->
+    <img src="iterative.gif"> 
+  </div>
 
 </div>
 <div class="twoBlocks">
@@ -99,7 +103,7 @@ padding-top: 2rem;">
 </div>
 </div>
 <div class="singleTextBlock1">
-<h4>How do these Ideas extensively explore design alternatives?</h4>
+<h4>Analysis of these design ideas:</h4>
 
 <!-- How do these Ideas extensively explore design alternatives? -->
 <b>These sets of sketches are distinctly different from one another, having been completed by different individuals without seeing others’ designs.
@@ -135,9 +139,9 @@ padding-top: 2rem;">
 </div>
 <hr>
 
-<div class="singleTextBlock">
+<div class="singleTextBlock" id="carousel">
 <div class="subheading">
-    <h3>1st Iteration of Hi-Fidelity (with Feedback)</h3>
+    <h3>1st Iteration of Hi-Fidelity + Feedback</h3>
 </div>
 <!-- start of carousel -->
 <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2rem; width: 80vw;">
@@ -206,13 +210,12 @@ padding-top: 2rem;">
 
   <div class="twoBlocksofText">
     <div class="blackBlock" id="borderBox">
-<h4>Task</h4>
+<h4>Tasks</h4>
 
-  <li>To create a room for a team bonding social.  </li>
-  <li>Success: Yes, No 
-  5-point rating scale: Very difficult to Very easy</li>
-  <li>Do you have any feedback regarding the screens you interacted with to create the room? If there was anything you particularly liked, please let us know! Do you have any feedback about the interface? Was there anything confusing or unintuitive about the process?  </li>
-  <li>Your task is to join a room for a team bonding social. While this prototype doesn't allow you to type in information in text boxes, you should be able to complete other necessary steps. </li>
+  <b><u>To create a game room for a team bonding social. </u> </b>
+  <li>Do you have any feedback regarding the screens you interacted with to create the room?  </li>
+  <li>Were you able to copy the code for the room properly? Did its position on the page make sense?</li> <br>
+  <b><u>Your task is to join a room for a team bonding social. </u> While this prototype doesn't allow you to type in information in text boxes, you should be able to complete other necessary steps.  </b>
   <li>Do you have any feedback regarding the screens you interacted with to join a room?</li>
   
 
@@ -221,12 +224,14 @@ padding-top: 2rem;">
     <div class="blackBlock">
       <h4>Post-task Questions
       </h4>
-     
+     <li>Did the logo appear to you as a way to go back to the "Home" page?</li>
+     <li>Did the color scheme and visual imagery add to your experience? What did you think about it?</li>
       <li>What frustrated you most about this site?</li>
         <li>If you had a magic wand, how would you improve this site?</li>
           <li>What did you like about the site?</li>
             <li>How likely are you to recommend this site to a friend or colleague (0=Not at all likely, and 10=Very likely)?</li>
-    </div>
+   
+          </div>
   </div>
 </div>
   <!-- <h3 style="
@@ -269,8 +274,6 @@ padding-top: 2rem;">
       <li>All users reported that the interface was easy to use, with all of them giving a rating of “easy” or very easy” after each task
       </li>
       <li>Surprisingly, most users didn’t find the logo to be an intuitive “home button”. One user said this was because it didn’t immediately draw their eye, and that having some accompanying text would be helpful
-      </li>
-      <li>Some users also noted that having pop-ups or instructions of some sort would be helpful for first-time users, though others noted that the interface was quite intuitive and accessible even to people with limited technological experience
       </li>
       <li>A user also noted that being able to resize the video gallery would be helpful
       </li>

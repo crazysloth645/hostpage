@@ -49,6 +49,7 @@
 
   .mainPage{
 padding-top: 3rem;
+/* background-color: white; */
   }
 
   #orangeNavBar{
@@ -96,11 +97,14 @@ padding-top: 3rem;
 
   .titleBlock{
     /* background-color: #8338ec; */
+    /* display: flex; */
     background-color: white;
     color: orange;
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 
   h2{
@@ -219,6 +223,43 @@ padding-top: 3rem;
     background-color: black;
     
 }
+
+.rationaleBoxShadow, .doubleTextBox{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+  }
+
+  .newBlocks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    background-image: linear-gradient(to right, #fa4219 10%, #fa4219 39%, #f78b2c 90%, #f78b2c 100%);
+}
+
+.orangeBlock{
+    color: white;
+    padding: 2rem;
+    width: 60%;
+  }
+
+  #longImage{
+    align-items: center;
+    /* padding-bottom: 2rem; */
+    padding-top: 2rem;
+    width: 90%;
+    vertical-align: middle;
+  }
+
+  #carousel{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    align-items: center;
+    /* width: 20%; */
+  }
+
 .singleTextBlock{
     align-items: center;
     

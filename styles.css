@@ -251,12 +251,10 @@ align-items: center;
     color:#8338ec
 }
 
-.blackBlock{
-    /* background-color: black; */
-    /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+/* .blackBlock{
     color: white;
     padding: 2rem;
-}
+} */
 
 
 .images{
@@ -421,6 +419,13 @@ align-items: center;
     align-items: center;
     padding-bottom: 2rem;
     background-color: black;
+}
+
+#longImage{
+    align-items: center;
+    /* padding-bottom: 2rem; */
+    background-color: black;
+    padding-top: 2rem;
 }
 
 #observations{
